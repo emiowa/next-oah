@@ -1,0 +1,46 @@
+body
+    margin: 0
+    min-width: 320px
+
+main 
+    position: relative
+    max-width: 1600px
+    margin: 0 auto
+
+.page
+    padding-top: 80px
+
+article, aside, footer, header, nav, main, section, summary, figure, figcaption 
+    display: block
+
+.keep
+    position: relative
+    height: 100vh
+
+*
+    &::selection
+        color: $dark
+        background: darken($root, 5%)
+    
+img, video
+    max-width: 100%
+    height: auto
+
+.content
+    max-width: 1038px
+    margin: 0 auto
+
+.container
+    max-width: 800px
+    padding: 0 12px
+    margin: 0 auto
+    font-size: 130%
+    line-height: 1.8
+
+
+.wp-block-embed-instagram iframe
+    max-width: 100%
+    min-width: 100%
+
+.feature-imagen
+    margin-top: 20px

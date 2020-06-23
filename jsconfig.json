@@ -6,7 +6,8 @@
       "molecules/*": ["components/molecules/*"],
       "organism/*": ["components/organism/*"],
       "templates/*": ["components/templates/*"],
-      "seo/*": ["lib/seo/*"]
+      "seo/*": ["lib/seo/*"],
+      "api/*": ["api/*"]
     }
   }
 }

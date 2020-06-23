@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
+import GaritmicConfig from "garitmic.config.json";
 
-function Navbar() {
+function Navbar({ lang = "es-es" }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -11,7 +12,7 @@ function Navbar() {
           <ul id="nav-large" className="nav-list page-nav-menu-large">
             <li className="item"></li>
             <li className="logo item logo-container">
-              <Link href="/">
+              <Link href={GaritmicConfig.root[lang]}>
                 <a>
                   <img
                     style={{ maxHeight: "80px" }}
@@ -23,17 +24,17 @@ function Navbar() {
             <li className="item hide-small" style={{ marginLeft: "auto" }}>
               <ul className="nav-list">
                 <li className="item">
-                  <Link href="/">
+                  <Link href="/[uid]" as="/concepto">
                     <a>CONCEPTO</a>
                   </Link>
                 </li>
                 <li className="item">
-                  <Link href="/">
+                  <Link href="/[uid]" as="/acerca-de-mi">
                     <a>ACERCA DE MÍ</a>
                   </Link>
                 </li>
                 <li className="item">
-                  <Link href="/">
+                  <Link href="/[uid]" as="/contacto">
                     <a>CONTACTO</a>
                   </Link>
                 </li>
@@ -50,18 +51,20 @@ function Navbar() {
         {isOpen && (
           <ul id="menu-trigger" className="open">
             <li className="item">
-              <Link href="/">
+              <Link href="/[uid]" as="/concepto">
                 <a>CONCEPTO</a>
               </Link>
             </li>
             <li className="item">
-              <Link href="/">
+              <Link href="/[uid]" as="/acerca-de-mi">
                 <a>ACERCA DE MÍ</a>
               </Link>
             </li>
-            <Link href="/">
-              <a>CONTACTO</a>
-            </Link>
+            <li className="item">
+              <Link href="/[uid]" as="/contacto">
+                <a>CONTACTO</a>
+              </Link>
+            </li>
             <div className="overlay" onClick={() => setIsOpen(!isOpen)}></div>
           </ul>
         )}

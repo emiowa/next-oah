@@ -14,5 +14,9 @@
   "cta": {
     "en-us": "Read more",
     "es-es": "Leer más"
+  },
+  "root": {
+    "en-us": "/en",
+    "es-es": "/"
   }
 }

@@ -13,7 +13,7 @@ Router.onRouteChangeError = () => NProgress.done();
 
 export default class Layout extends React.Component {
   render() {
-    const { children, seo } = this.props;
+    const { children, seo, lang } = this.props;
     return (
       <main>
         <Head>
@@ -77,7 +77,7 @@ export default class Layout extends React.Component {
           />
         </Head>
 
-        <Navbar />
+        <Navbar lang={lang} />
 
         <div className="page">
           <div className="page-body">{children}</div>

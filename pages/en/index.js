@@ -6,7 +6,7 @@ import Card from "molecules/Card";
 
 function Home({ page, post }) {
   return (
-    <Layout>
+    <Layout lang={post.lang}>
       <HeroBanner />
       <Introduction page={page} post={post} />
       <div className="block">

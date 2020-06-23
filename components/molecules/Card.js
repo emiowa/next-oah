@@ -9,7 +9,7 @@ function Card(post) {
         <div class="block small-12 medium-6 valign">
           <div class="inside-pad">
             <Link href="/blog/[uid]" as={`/blog/${post.uid}`}>
-              <a href="/limites-de-una-vivienda/">
+              <a>
                 <img src={post.data.featured_img.url} />
               </a>
             </Link>
@@ -17,16 +17,15 @@ function Card(post) {
         </div>
         <div class="block small-12 medium-6">
           <div class="inside-pad">
-            <a href="https://oaharchitecture.com/uncategorized/limites-de-una-vivienda/">
-              <h5>{RichText.asText(post.data.title)}</h5>
-            </a>
+            <Link href="/blog/[uid]" as={`/blog/${post.uid}`}>
+              <a>
+                <h5>{RichText.asText(post.data.title)}</h5>
+              </a>
+            </Link>
             <p>{RichText.asText(post.data.excerpt)}</p>
-            <a
-              href="https://oaharchitecture.com/uncategorized/limites-de-una-vivienda/"
-              class="button-link"
-            >
-              {GaritmicConfig.cta[post.lang]}
-            </a>
+            <Link href="/blog/[uid]" as={`/blog/${post.uid}`}>
+              <a class="button-link">{GaritmicConfig.cta[post.lang]}</a>
+            </Link>
           </div>
         </div>
       </div>

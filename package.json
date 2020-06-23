@@ -7,6 +7,10 @@
     "lib": "lib"
   },
   "dependencies": {
+    "moment": "^2.26.0",
+    "nprogress": "^0.2.0",
+    "prismic-javascript": "^2.7.1",
+    "prismic-reactjs": "^0.3.2",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

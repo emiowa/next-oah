@@ -1,0 +1,18 @@
+{
+  "siteName": "Somos Gente Digital",
+  "siteDescription": "Hablemos de arquitectura",
+  "siteURL": "https://oaharchitecture.com",
+  "apiEndpoint": "https://oaharchitecture.cdn.prismic.io/api/v2 ",
+
+  "contactEmail": "info@oaharchitecture.com",
+  "lang": "es",
+  "timeZone": "UTC-5",
+  "dateFormat": "LL",
+  "social": {
+    "openGrap": "https://images.prismic.io/oaharchitecture/77d3f4ba-73a8-4f9d-88fa-dc4407a3b183_banner-imagen-4.jpg?auto=compress,format"
+  },
+  "cta": {
+    "en-us": "Read more",
+    "es-es": "Leer más"
+  }
+}

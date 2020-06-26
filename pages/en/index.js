@@ -7,7 +7,7 @@ import Card from "molecules/Card";
 function Home({ page, post }) {
   return (
     <Layout lang={post.lang}>
-      <HeroBanner />
+      <HeroBanner {...page} />
       <Introduction page={page} post={post} />
       <div className="block">
         <div className="pad">
@@ -33,6 +33,7 @@ Home.getInitialProps = async ({ req, res }) => {
         lang: "en-us",
       }),
       Client(req).query(Prismic.Predicates.at("document.type", "blogpost"), {
+        orderings: "[my.blogpost.date desc]",
         lang: "en-us",
       }),
     ]);

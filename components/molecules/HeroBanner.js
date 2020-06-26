@@ -1,8 +1,9 @@
-function HeroBanner() {
+function HeroBanner(page) {
+  console.log(page);
   return (
     <div className="block">
       <div className="hero-banner">
-        <img src="https://images.prismic.io/oaharchitecture/77d3f4ba-73a8-4f9d-88fa-dc4407a3b183_banner-imagen-4.jpg?auto=compress,format" />
+        <img src={page.data.cover.url} />
       </div>
     </div>
   );

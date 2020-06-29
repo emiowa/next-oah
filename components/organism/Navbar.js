@@ -22,21 +22,43 @@ function Navbar({ lang = "es-es" }) {
             </li>
             <li className="item hide-small" style={{ marginLeft: "auto" }}>
               <ul className="nav-list">
-                <li className="item">
-                  <Link href="/[uid]" as="/concepto">
-                    <a>CONCEPTO</a>
-                  </Link>
-                </li>
-                <li className="item">
-                  <Link href="/[uid]" as="/acerca-de-mi">
-                    <a>ACERCA DE MÍ</a>
-                  </Link>
-                </li>
-                <li className="item">
-                  <Link href="/[uid]" as="/contacto">
-                    <a>CONTACTO</a>
-                  </Link>
-                </li>
+                {lang === "es-es" ? (
+                  <>
+                    <li className="item">
+                      <Link href="/[uid]" as="/concepto">
+                        <a>CONCEPTO</a>
+                      </Link>
+                    </li>
+                    <li className="item">
+                      <Link href="/[uid]" as="/acerca-de-mi">
+                        <a>ACERCA DE MÍ</a>
+                      </Link>
+                    </li>
+                    <li className="item">
+                      <Link href="/[uid]" as="/contacto">
+                        <a>CONTACTO</a>
+                      </Link>
+                    </li>
+                  </>
+                ) : (
+                  <>
+                    <li className="item">
+                      <Link href="/en/[uid]" as="/en/concept">
+                        <a>CONCEPT</a>
+                      </Link>
+                    </li>
+                    <li className="item">
+                      <Link href="/en/[uid]" as="/en/about-me">
+                        <a>ABOUT ME</a>
+                      </Link>
+                    </li>
+                    <li className="item">
+                      <Link href="/en/[uid]" as="/en/contact">
+                        <a>CONTACT</a>
+                      </Link>
+                    </li>
+                  </>
+                )}
                 <li className="item">
                   <Link href="/">
                     <a style={{ position: "relative", top: "3px" }}>
@@ -48,7 +70,7 @@ function Navbar({ lang = "es-es" }) {
                   </Link>
                 </li>
                 <li className="item">
-                  <Link href="/en">
+                  <Link href="/en/">
                     <a style={{ position: "relative", top: "3px" }}>
                       <img
                         width="22"
@@ -69,21 +91,43 @@ function Navbar({ lang = "es-es" }) {
         </div>
         {isOpen && (
           <ul id="menu-trigger" className="open">
-            <li className="item">
-              <Link href="/[uid]" as="/concepto">
-                <a>CONCEPTO</a>
-              </Link>
-            </li>
-            <li className="item">
-              <Link href="/[uid]" as="/acerca-de-mi">
-                <a>ACERCA DE MÍ</a>
-              </Link>
-            </li>
-            <li className="item">
-              <Link href="/[uid]" as="/contacto">
-                <a>CONTACTO</a>
-              </Link>
-            </li>
+            {lang === "es-es" ? (
+              <>
+                <li className="item">
+                  <Link href="/[uid]" as="/concepto">
+                    <a>CONCEPTO</a>
+                  </Link>
+                </li>
+                <li className="item">
+                  <Link href="/[uid]" as="/acerca-de-mi">
+                    <a>ACERCA DE MÍ</a>
+                  </Link>
+                </li>
+                <li className="item">
+                  <Link href="/[uid]" as="/contacto">
+                    <a>CONTACTO</a>
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li className="item">
+                  <Link href="/en/[uid]" as="/en/concept">
+                    <a>CONCEPT</a>
+                  </Link>
+                </li>
+                <li className="item">
+                  <Link href="/en/[uid]" as="/en/about-me">
+                    <a>ABOUT ME</a>
+                  </Link>
+                </li>
+                <li className="item">
+                  <Link href="/en/[uid]" as="/en/contact">
+                    <a>CONTACTO</a>
+                  </Link>
+                </li>
+              </>
+            )}
             <li className="item">
               <ul
                 className="nav-list"

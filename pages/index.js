@@ -7,8 +7,8 @@ import Card from "molecules/Card";
 function Home({ page, post }) {
   return (
     <Layout lang={post.lang}>
-      <HeroBanner />
-      <Introduction page={page} post={post} />
+      <HeroBanner {...page} />
+      <Introduction page={page} post={post} lang="es-es" />
       <div className="block">
         <div className="pad">
           <div className="coat">

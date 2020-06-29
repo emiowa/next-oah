@@ -83,7 +83,7 @@ export default class Layout extends React.Component {
           <div className="page-body">{children}</div>
         </div>
 
-        <Footer />
+        <Footer lang={lang} />
 
         {seo}
       </main>

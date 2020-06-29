@@ -4,7 +4,6 @@ import GaritmicConfig from "garitmic.config.json";
 
 function Navbar({ lang = "es-es" }) {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <header className="page-header">
       <nav id="Top-bar" className="page-nav-container">
@@ -38,6 +37,26 @@ function Navbar({ lang = "es-es" }) {
                     <a>CONTACTO</a>
                   </Link>
                 </li>
+                <li className="item">
+                  <Link href="/">
+                    <a style={{ position: "relative", top: "3px" }}>
+                      <img
+                        width="22"
+                        src="https://www.countryflags.io/es/flat/64.png"
+                      />
+                    </a>
+                  </Link>
+                </li>
+                <li className="item">
+                  <Link href="/en">
+                    <a style={{ position: "relative", top: "3px" }}>
+                      <img
+                        width="22"
+                        src="https://www.countryflags.io/us/flat/64.png"
+                      />
+                    </a>
+                  </Link>
+                </li>
               </ul>
             </li>
             <li
@@ -64,6 +83,33 @@ function Navbar({ lang = "es-es" }) {
               <Link href="/[uid]" as="/contacto">
                 <a>CONTACTO</a>
               </Link>
+            </li>
+            <li className="item">
+              <ul
+                className="nav-list"
+                style={{ maxWidth: "200px", margin: "0 auto" }}
+              >
+                <li>
+                  <Link href="/">
+                    <a>
+                      <img
+                        width="22"
+                        src="https://www.countryflags.io/es/flat/64.png"
+                      />
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/en/">
+                    <a>
+                      <img
+                        width="22"
+                        src="https://www.countryflags.io/us/flat/64.png"
+                      />
+                    </a>
+                  </Link>
+                </li>
+              </ul>
             </li>
             <div className="overlay" onClick={() => setIsOpen(!isOpen)}></div>
           </ul>

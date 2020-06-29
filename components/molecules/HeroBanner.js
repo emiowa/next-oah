@@ -1,5 +1,4 @@
 function HeroBanner(page) {
-  console.log(page);
   return (
     <div className="block">
       <div className="hero-banner">

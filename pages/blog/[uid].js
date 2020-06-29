@@ -3,7 +3,6 @@ import Layout from "templates/Layout";
 import { RichText } from "prismic-reactjs";
 
 function Post({ post }) {
-  console.log(post);
   return (
     <Layout>
       <div className="feature-imagen">

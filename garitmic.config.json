@@ -3,7 +3,7 @@
   "siteDescription": "Hablemos de arquitectura",
   "siteURL": "https://oaharchitecture.com",
   "apiEndpoint": "https://oaharchitecture.cdn.prismic.io/api/v2 ",
-
+  "favIcon": "https://images.prismic.io/oaharchitecture/dd1fbf5c-68cc-4b49-a0f6-ceff08af7ffc_cropped-favicon-270x270.png?auto=compress,format",
   "contactEmail": "info@oaharchitecture.com",
   "lang": "es",
   "timeZone": "UTC-5",
@@ -16,7 +16,7 @@
     "es-es": "Leer más"
   },
   "root": {
-    "en-us": "/en",
+    "en-us": "/en/",
     "es-es": "/"
   }
 }

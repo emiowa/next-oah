@@ -70,7 +70,7 @@ function Navbar({ lang = "es-es" }) {
                   </Link>
                 </li>
                 <li className="item">
-                  <Link href="/en/">
+                  <Link href="/en">
                     <a style={{ position: "relative", top: "3px" }}>
                       <img
                         width="22"
@@ -144,7 +144,7 @@ function Navbar({ lang = "es-es" }) {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/en/">
+                  <Link href="/en">
                     <a>
                       <img
                         width="22"

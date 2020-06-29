@@ -1,10 +1,12 @@
 import { Client, Prismic } from "api/prismic";
+
 import Layout from "templates/Layout";
 import { RichText } from "prismic-reactjs";
+import SingleSeo from "lib/seo/SingleSeo";
 
 function Post({ post }) {
   return (
-    <Layout>
+    <Layout seo={<SingleSeo {...post} />}>
       <div className="feature-imagen">
         <img width="1500" height="750" src={post.data.featured_img.url} />{" "}
       </div>

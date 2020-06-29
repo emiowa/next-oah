@@ -3,12 +3,15 @@ import Layout from "templates/Layout";
 import HeroBanner from "molecules/HeroBanner";
 import Introduction from "molecules/Introduction";
 import Card from "molecules/Card";
+import GeneralSeo from "seo/GeneralSeo";
 
 function Home({ page, post }) {
+  const lang = "en-us";
+
   return (
-    <Layout lang="en-us">
+    <Layout lang={lang} seo={<GeneralSeo lang={lang} />}>
       <HeroBanner {...page} />
-      <Introduction page={page} post={post} lang="en-us" />
+      <Introduction page={page} post={post} lang={lang} />
       <div className="block">
         <div className="pad">
           <div className="coat">

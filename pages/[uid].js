@@ -1,10 +1,11 @@
 import { Client, Prismic } from "api/prismic";
 import Layout from "templates/Layout";
 import { RichText } from "prismic-reactjs";
+import SingleSeo from "lib/seo/SingleSeo";
 
 function Pages({ pages }) {
   return (
-    <Layout>
+    <Layout seo={<SingleSeo {...pages} />}>
       <div className="container">
         <h1>{RichText.asText(pages.data.title)}</h1>
         {RichText.render(pages.data.content)}

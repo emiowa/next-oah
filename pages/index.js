@@ -1,4 +1,5 @@
 import { Client, Prismic } from "api/prismic";
+import GeneralSeo from "seo/GeneralSeo";
 import Layout from "templates/Layout";
 import HeroBanner from "molecules/HeroBanner";
 import Introduction from "molecules/Introduction";
@@ -6,7 +7,7 @@ import Card from "molecules/Card";
 
 function Home({ page, post }) {
   return (
-    <Layout lang={post.lang}>
+    <Layout lang={post.lang} seo={<GeneralSeo lang={post.lang} />}>
       <HeroBanner {...page} />
       <Introduction page={page} post={post} lang="es-es" />
       <div className="block">

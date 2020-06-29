@@ -11,7 +11,7 @@ function Navbar({ lang = "es-es" }) {
           <ul id="nav-large" className="nav-list page-nav-menu-large">
             <li className="item"></li>
             <li className="logo item logo-container">
-              <Link href={GaritmicConfig.root[lang]}>
+              <Link href={lang === "es-es" ? "/" : "/en"}>
                 <a>
                   <img
                     style={{ maxHeight: "80px" }}
@@ -93,17 +93,17 @@ function Navbar({ lang = "es-es" }) {
           <ul id="menu-trigger" className="open">
             {lang === "es-es" ? (
               <>
-                <li className="item">
+                <li className="item" onClick={() => setIsOpen(!isOpen)}>
                   <Link href="/[uid]" as="/concepto">
                     <a>CONCEPTO</a>
                   </Link>
                 </li>
-                <li className="item">
+                <li className="item" onClick={() => setIsOpen(!isOpen)}>
                   <Link href="/[uid]" as="/acerca-de-mi">
                     <a>ACERCA DE MÍ</a>
                   </Link>
                 </li>
-                <li className="item">
+                <li className="item" onClick={() => setIsOpen(!isOpen)}>
                   <Link href="/[uid]" as="/contacto">
                     <a>CONTACTO</a>
                   </Link>
@@ -111,29 +111,29 @@ function Navbar({ lang = "es-es" }) {
               </>
             ) : (
               <>
-                <li className="item">
+                <li className="item" onClick={() => setIsOpen(!isOpen)}>
                   <Link href="/en/[uid]" as="/en/concept">
                     <a>CONCEPT</a>
                   </Link>
                 </li>
-                <li className="item">
+                <li className="item" onClick={() => setIsOpen(!isOpen)}>
                   <Link href="/en/[uid]" as="/en/about-me">
                     <a>ABOUT ME</a>
                   </Link>
                 </li>
-                <li className="item">
+                <li className="item" onClick={() => setIsOpen(!isOpen)}>
                   <Link href="/en/[uid]" as="/en/contact">
-                    <a>CONTACTO</a>
+                    <a>CONTACT</a>
                   </Link>
                 </li>
               </>
             )}
-            <li className="item">
+            <li className="item" onClick={() => setIsOpen(!isOpen)}>
               <ul
                 className="nav-list"
                 style={{ maxWidth: "200px", margin: "0 auto" }}
               >
-                <li>
+                <li onClick={() => setIsOpen(!isOpen)}>
                   <Link href="/">
                     <a>
                       <img
@@ -143,7 +143,7 @@ function Navbar({ lang = "es-es" }) {
                     </a>
                   </Link>
                 </li>
-                <li>
+                <li onClick={() => setIsOpen(!isOpen)}>
                   <Link href="/en">
                     <a>
                       <img

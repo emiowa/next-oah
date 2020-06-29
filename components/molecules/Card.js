@@ -3,7 +3,6 @@ import GaritmicConfig from "garitmic.config.json";
 import Link from "next/link";
 
 function Card(post) {
-  console.log(GaritmicConfig.root[post.lang]);
   return (
     <div className="block small-12 medium-4">
       <div className="inside-pad outline">

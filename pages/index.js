@@ -31,7 +31,12 @@ Home.getInitialProps = async ({ req, res }) => {
   try {
     const [page, post] = await Promise.all([
       Client(req).getSingle("homepage"),
-      Client(req).query(Prismic.Predicates.at("document.type", "blogpost")),
+      Client(req).query(
+        Prismic.Predicates.at("document.type", "blogpost", {
+          orderings: "[my.blogpost.date desc]",
+          lang: "es-es",
+        })
+      ),
     ]);
 
     return { page, post, statusCode: 200 };

@@ -61,22 +61,12 @@ function Navbar({ lang = "es-es" }) {
                 )}
                 <li className="item">
                   <Link href="/">
-                    <a style={{ position: "relative", top: "3px" }}>
-                      <img
-                        width="22"
-                        src="https://www.countryflags.io/es/flat/64.png"
-                      />
-                    </a>
+                    <a style={{ position: "relative", top: "3px" }}>🇪🇸</a>
                   </Link>
                 </li>
                 <li className="item">
                   <Link href="/en">
-                    <a style={{ position: "relative", top: "3px" }}>
-                      <img
-                        width="22"
-                        src="https://www.countryflags.io/us/flat/64.png"
-                      />
-                    </a>
+                    <a style={{ position: "relative", top: "3px" }}>🇺🇸</a>
                   </Link>
                 </li>
               </ul>

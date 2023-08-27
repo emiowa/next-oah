@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function Header(){
 
@@ -11,10 +12,10 @@ export default function Header(){
 	// 	{label: "Blog", path: "/blog"},
 	// 	{label: "Contact", path: "/contact"}
 	// ]
-
+	const router = useRouter();
 	return(
         <div>
-			{/* <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossOrigin="anonymous"/> */}
+			<link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossOrigin="anonymous"/>
 
 		
 			<div className="container">
@@ -33,10 +34,11 @@ export default function Header(){
 										</li>);
 						})}
 					</ul> */}
+					{/* aria-current={router.pathname === '/' ? 'page' : ''} */}
 
 
 					<ul className="nav nav-pills">
-						<li className="nav-item"><Link href="/" className="nav-link active" aria-current="page">Home</Link></li>
+						<li className="nav-item"><Link href="/" className={router.pathname === '/' ? 'nav-link active' : 'nav-link'}>Home</Link></li>
 						<div className="dropdown">
 							<Link href="#" className="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">About</Link>
 							<ul className="dropdown-menu text-small shadow">
@@ -52,7 +54,7 @@ export default function Header(){
 							<li><Link className="dropdown-item" href="/blog/lets-talk-about-architecture">Let's talk about Architecture</Link></li>
 							</ul>
 						</div>
-						<li className="nav-item"><Link href="/contact" className="nav-link">Contact</Link></li>
+						<li className="nav-item"><Link href="/contact" className={router.pathname === '/contact' ? 'nav-link active' : 'nav-link'}>Contact</Link></li>
 						<div className="dropdown">
 							<Link href="#" className=" dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-globe-americas" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/></svg>
@@ -82,7 +84,7 @@ export default function Header(){
 					line-height: 1;
 				}
 			`}</style>
-			{/* <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossOrigin="anonymous"></script> */}
+			<script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossOrigin="anonymous"></script>
 		</div>
     )
 }

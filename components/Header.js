@@ -2,16 +2,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function Header(){
-
-	// const router = useRouter();
-	// console.log(router.asPath);
-
-	// const data = [
-	// 	{label: "Home", path: "/"},
-	// 	{label: "About", path: "/about"},
-	// 	{label: "Blog", path: "/blog"},
-	// 	{label: "Contact", path: "/contact"}
-	// ]
 	const router = useRouter();
 	return(
         <div>
@@ -23,18 +13,6 @@ export default function Header(){
 					<Link href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
 						<span className="fs-6">OAH<br />Architecture</span>
 					</Link>
-
-					{/* <ul>
-						{data.map((menuTab) => {
-								const isHome = router.asPath === "/";
-								const isActive = isHome ? menuTab.path === "/" : router.asPath.includes(menuTab.path); // Is the path of menuTab includes in the current Path?
-								// IsActive return true or false
-								return (<li key={menuTab.label}>
-											<a href={menuTab.path} className={isActive ? "bold" : "regular"}> {menuTab.label}</a>
-										</li>);
-						})}
-					</ul> */}
-					{/* aria-current={router.pathname === '/' ? 'page' : ''} */}
 
 
 					<ul className="nav nav-pills">

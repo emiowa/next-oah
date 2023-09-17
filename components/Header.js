@@ -42,16 +42,16 @@ export default function Header(){
 						<div className="dropdown">
 							<Link href="#" className={(router.pathname === '/about/about-me' || router.pathname === '/about/about-oah-architecture') ? 'dropdown-toggle nav-link active' : 'dropdown-toggle nav-link'} data-bs-toggle="dropdown" aria-expanded="false">About</Link>
 							<ul className="dropdown-menu text-small shadow">
-								<li><Link className="dropdown-item" href="/about/about-me">About me</Link></li>
-								<li><Link className="dropdown-item" href="/about/about-oah-architecture">About OAH Architecture</Link></li>
+								<li><Link className={router.pathname === '/about/about-me' ? 'dropdown-item active' : 'dropdown-item'} href="/about/about-me">About me</Link></li>
+								<li><Link className={router.pathname === '/about/about-oah-architecture' ? 'dropdown-item active' : 'dropdown-item'} href="/about/about-oah-architecture">About OAH Architecture</Link></li>
 							</ul>
 						</div>
 						<div className="dropdown">
 							<Link href="#" className={(router.pathname === '/blog/user-stories' || router.pathname === '/blog/lets-inhabit-architecture' || router.pathname === '/blog/lets-talk-about-architecture') ? 'dropdown-toggle nav-link active' : 'dropdown-toggle nav-link'} data-bs-toggle="dropdown" aria-expanded="false">Blog</Link>
 							<ul className="dropdown-menu text-small shadow">
-							<li><Link className="dropdown-item" href="/blog/user-stories">User stories</Link></li>
-							<li><Link className="dropdown-item" href="/blog/lets-inhabit-architecture">Let's inhabit Architecture</Link></li>
-							<li><Link className="dropdown-item" href="/blog/lets-talk-about-architecture">Let's talk about Architecture</Link></li>
+							<li><Link className={router.pathname === '/blog/user-stories' ? 'dropdown-item active' : 'dropdown-item'} href="/blog/user-stories">User stories</Link></li>
+							<li><Link className={router.pathname === '/blog/lets-inhabit-architecture' ? 'dropdown-item active' : 'dropdown-item'} href="/blog/lets-inhabit-architecture">Let's inhabit Architecture</Link></li>
+							<li><Link className={router.pathname === '/blog/lets-talk-about-architecture' ? 'dropdown-item active' : 'dropdown-item'} href="/blog/lets-talk-about-architecture">Let's talk about Architecture</Link></li>
 							</ul>
 						</div>
 						<li className="nav-item"><Link href="/contact" className={router.pathname === '/contact' ? 'nav-link active' : 'nav-link'}>Contact</Link></li>

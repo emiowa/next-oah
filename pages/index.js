@@ -5,8 +5,8 @@ export default function Home(){
 		<div>
 			<Layout>
 				<h1>holis</h1>
+				<h1>Yo soy el home</h1>
 			</Layout>
-			<h1>Yo soy el home</h1>
 		</div>
 		)
 }

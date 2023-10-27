@@ -24,7 +24,7 @@ export default function Footer(){
 								</div>
 							</div>
 							<div className='col-12 col-sm-12 col-md-6 px-5 pt-3 d-flex justify-content-center'>
-								<Image src='./footer-image.svg' className='img-fluid' alt='villa-savoye' width='550' height='250' />
+								<Image src='../footer-image.svg' className='img-fluid' alt='villa-savoye' width='550' height='250' />
 							</div>
 						</div>
 

@@ -2,7 +2,8 @@ import Layout from "../../components/Layout";
 
 export default function AboutOahArchitecture(){
 	return (<div>
-					<Layout />
+					<Layout>
 					<h1>Yo soy el about oah architecture</h1>
+					</Layout>
 			</div>)
 }

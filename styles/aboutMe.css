@@ -1,0 +1,18 @@
+.marginDiv{
+    padding-left: 12%;
+    padding-right: 12%;
+}
+.paragraphStyle{
+    text-align: justify;
+}
+
+/* FOR MOBILE */
+@media (max-width: 991px){
+    .marginDiv{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .paragraphStyle{
+        text-align: left;
+    }
+}

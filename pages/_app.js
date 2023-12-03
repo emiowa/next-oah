@@ -3,6 +3,7 @@ import '../styles/main.css';
 import '../styles/home.css';
 import '../styles/header.css';
 import '../styles/footer.css';
+import '../styles/aboutMe.css';
 import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {

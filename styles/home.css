@@ -1,0 +1,89 @@
+.styleBackgroundAnimation{
+    z-index: -1000;
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    position: fixed;
+    background-repeat: no-repeat;
+    display: block;
+}
+.textConcept{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.textCreatedBy{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* FOR MOBILE */
+@media (max-width: 991px){
+    div .positionRelativeMobile{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .styleBackgroundAnimationMobile{
+        position: relative;
+        z-index: -1000;
+        min-height: 100%;
+        width: 335%;
+        margin-left: -40vw;
+    }
+    #containerMobile{
+        margin-right: 18px !important;
+        margin-left: 18px !important;
+        padding-right: 0px !important;
+    }
+    .initialTextMobile{
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+    #titleHomeMobile{
+        font-size: 33px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        line-height: 1;
+    }
+    .textConcept{
+        display: none;
+    }
+    .textCreatedBy{
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    #titleH2Mobile{
+        font-size: 33px;
+        color: #212529;
+        text-align: center;
+    }
+    #paragraphMobile{
+        color: #212529;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .buttonMobile{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .readMoreButton{
+        font-size: 20px;
+        color: #f8f9fa;
+        background-color: #919e72;
+        padding: 6px 40px;
+        border: solid 0.1vw #919e72;
+    }
+    
+    .readMoreButton:hover{
+        color: #919e72;
+        background-color: transparent;
+        border: solid 0.1vw #919e72;
+    }
+}

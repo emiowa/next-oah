@@ -1,0 +1,17 @@
+/* FOR MOBILE */
+@media (max-width: 991px){
+    ul .centerTextDropdownMobile{
+        text-align: center;
+    }
+    div .centerTextMenuMobile{
+        text-align: center;
+    }
+}
+
+/* FOR PC */
+@media (min-width: 992px) {
+    div .navbarAlignLeft{
+        display: flex;
+        justify-content: end;
+    }
+}

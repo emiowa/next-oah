@@ -1,0 +1,26 @@
+button.contactUsButton{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #f8f9fa;
+    background-color: transparent;
+    padding: 0.6vw 3vw;
+    border: solid 0.1vw #f8f9fa;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+}
+
+button.contactUsButton:hover{
+    color: #212529;
+    background-color: #f8f9fa;
+    border: solid 0.1vw #212529;
+}
+
+/* FOR MOBILE */
+@media (max-width: 991px){
+    button.contactUsButton{
+        font-size: 17px;
+        padding: 8px 30px;
+    }
+}

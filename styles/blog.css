@@ -1,0 +1,65 @@
+.styleBackgroundBlogAnimation{
+    z-index: -1000;
+    position: absolute;
+}
+.portaFiraAnimationStyle{
+    width: 92vw;
+    right: -25vw;
+    position: relative;
+}
+
+/* GO TO BUTTON */
+.goToButton{
+    width: fit-content;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f8f9fa;
+    background-color: #a46951;
+    padding: 0.6vw 3vw;
+    border: solid 0.1vw #a46951;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.goToButton:hover{
+    color: #a46951;
+    background-color: transparent;
+    border: solid 0.1vw #a46951;
+}
+
+/* FOR BIG SCREENS */
+@media (min-width: 1400px){
+    .portaFiraAnimationStyle{
+        width: 90vw;
+        right: -25vw;
+    }
+    .textStyleResponsive{
+        padding-left: 150px !important;
+        margin-top: 0 !important;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* FOR MOBILE */
+@media (max-width: 991px){
+    .portaFiraAnimationStyle{
+        display: none;
+    }
+    .goToButton{
+        font-size: 20px;
+        color: #f8f9fa;
+        background-color: #a46951;
+        padding: 6px 40px;
+        border: solid 0.1vw #a46951;
+    }
+    .goToButton:hover{
+        color: #a46951;
+        background-color: transparent;
+        border: solid 0.1vw #a46951;
+    }
+}

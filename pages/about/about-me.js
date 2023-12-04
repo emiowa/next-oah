@@ -5,7 +5,7 @@ export default function AboutMe(){
 				<Layout>
 					<div className='container-fluid mt-5 pt-4 mx-0 px-lg-5'>
 						<div className='row mb-5 marginDiv'>
-							<h1 className="display-lg-2 display-1 text-center mt-5 mb-5" id="titleAboutMe">About me</h1>
+							<h1 className="display-lg-2 display-1 text-center mt-5 mb-5">About me</h1>
 							<p className="paragraphStyle">I was in my last year of high school before entering the university, determined but not convinced to study Architecture. It was another day of professional orientation, you know, when professionals go to schools to share their academic and work experiences to give you an idea of what your future could be if you choose to study that career.<br /><br />
 							They divided us into groups. I was in the group of design lovers. I have to admit that I felt very out of place. Everyone who was there was clearly recognized for their artistic talents. I was recognized for being more rational, organized and systematic, my notes by hand seemed to be made by computer, always titles in red and handwriting in a perfect Arial 12.<br /><br />
 							The orientation began and the speakers asked:<br />

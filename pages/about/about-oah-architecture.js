@@ -5,7 +5,7 @@ export default function AboutOahArchitecture(){
 				<Layout>
 					<div className='container-fluid mt-5 pt-4 mx-0 px-lg-5'>
 							<div className='row mb-5 marginDiv'>
-								<h1 className="display-lg-2 display-1 text-center mt-5 mb-5" id="titleAboutMe">About OAH Architecture</h1>
+								<h1 className="display-lg-2 display-1 text-center mt-5 mb-5">About OAH Architecture</h1>
 								<p className="text-center mb-5 fst-italic fw-bold">"Architecture is only considered complete with the intervention of the human being who experiences it"<br />
 								Tadao Ando</p>
 								<p className="paragraphStyle">I ended up falling in love with Architecture when I understood that it was more than the design of a building, it is about designing a complete experience. Each detail and decision is taken in order to generate something in those who will inhabit the space, it is in our hands to choose if those are going to affect people's lives in a positive way.<br /><br />

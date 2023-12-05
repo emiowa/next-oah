@@ -7,9 +7,14 @@
     right: -25vw;
     position: relative;
 }
+.plazaLibertadAnimationStyle{
+    width: 92vw;
+    right: -28vw;
+    position: relative;
+}
 
 /* GO TO BUTTON */
-.goToButton{
+.goToButtonUS{
     width: fit-content;
     font-weight: bold;
     font-size: 20px;
@@ -21,11 +26,27 @@
     cursor: pointer;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
-
-.goToButton:hover{
+.goToButtonUS:hover{
     color: #a46951;
     background-color: transparent;
     border: solid 0.1vw #a46951;
+}
+.goToButtonLIA{
+    width: fit-content;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f8f9fa;
+    background-color: #c19950;
+    padding: 0.6vw 3vw;
+    border: solid 0.1vw #c19950;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.goToButtonLIA:hover{
+    color: #c19950;
+    background-color: transparent;
+    border: solid 0.1vw #c19950;
 }
 
 /* FOR BIG SCREENS */

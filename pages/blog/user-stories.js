@@ -12,7 +12,7 @@ export default function UserStories(){
 							When inhabiting a space becomes part of your daily routine, you begin to identify its virtues and flaws. You develop a preference for spending more time in one area than another and establish the activities you prefer to do in each of the places that make up the building.<br /><br />
 							Welcome to USER STORIES!</p>
 							<div className="mt-5 text-center">
-								<button className="goToButtonUS">Go to USER STORIES</button>
+								<button className="goToButtonUS">Let's Go!</button>
 							</div>
 						</div>
 						<div className='styleBackgroundBlogAnimation'>

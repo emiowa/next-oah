@@ -64,6 +64,10 @@
         align-items: center;
         justify-content: center;
     }
+    .plazaLibertadAnimationStyle{
+        width: 85vw;
+        right: -30vw;
+    }
 }
 
 /* FOR MOBILE */
@@ -71,16 +75,31 @@
     .portaFiraAnimationStyle{
         display: none;
     }
-    .goToButton{
+    .goToButtonUS{
         font-size: 20px;
         color: #f8f9fa;
         background-color: #a46951;
         padding: 6px 40px;
         border: solid 0.1vw #a46951;
     }
-    .goToButton:hover{
+    .goToButtonUS:hover{
         color: #a46951;
         background-color: transparent;
         border: solid 0.1vw #a46951;
+    }
+    .plazaLibertadAnimationStyle{
+        display: none;
+    }
+    .goToButtonLIA{
+        font-size: 20px;
+        color: #f8f9fa;
+        background-color: #c19950;
+        padding: 6px 40px;
+        border: solid 0.1vw #c19950;
+    }
+    .goToButtonLIA:hover{
+        color: #c19950;
+        background-color: transparent;
+        border: solid 0.1vw #c19950;
     }
 }

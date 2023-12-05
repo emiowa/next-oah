@@ -1,16 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import VillaSavoyeAnimation from './VillaSavoyeAnimation';
 
 export default function Footer(){
-	const router = useRouter();
-
 	return (
 			<div>
-				{/* <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossOrigin="anonymous"/> */}
-
 				<div classNameName="container">
 					<div className="py-5 bg-dark">
 						<div className="row">
@@ -41,7 +36,6 @@ export default function Footer(){
 						</div>
 					</div>
 				</div>
-				{/* <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossOrigin="anonymous"></script> */}
 				<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 			</div>
 	)

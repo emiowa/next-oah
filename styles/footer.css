@@ -10,13 +10,18 @@ button.contactUsButton{
     display: flex;
     margin: auto;
 }
-
 button.contactUsButton:hover{
     color: #212529;
     background-color: #f8f9fa;
     border: solid 0.1vw #212529;
 }
 
+/* FOR BIG SCREEN */
+@media (min-width: 1400px){
+    .paddingFooter{
+        margin-left: 100px;
+    }
+}
 /* FOR MOBILE */
 @media (max-width: 991px){
     button.contactUsButton{

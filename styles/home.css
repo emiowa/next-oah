@@ -16,6 +16,14 @@
     font-weight: 300;
 }
 
+/* FOR BIG SCREENS */
+@media (min-width: 1400px){
+    #paragraphMobile{
+        padding-right: 200px !important;
+        font-size: 1.2rem;
+    }
+}
+
 /* FOR MOBILE */
 @media (max-width: 991px){
     div .positionRelativeMobile{

@@ -9,7 +9,7 @@ export default function Footer(){
 				<div classNameName="container">
 					<div className="py-5 bg-dark">
 						<div className="row">
-							<div className="col-12 col-sm-12 col-md-6 text-light px-5">
+							<div className="col-12 col-sm-12 col-lg-6 text-light px-5 paddingFooter">
 								<h5>OAH<br />Architecture</h5>
 								<p>Design is more important and necessary than we thought, good design can affect people's lives, habits, routines and feelings in a positive way.</p>
 								<div className="d-flex flex-column">
@@ -26,7 +26,7 @@ export default function Footer(){
 									</div>
 								</div>
 							</div>
-							<div className='col-12 col-sm-12 col-md-6 px-5 pt-3 d-flex justify-content-center'>
+							<div className='col-12 col-sm-12 col-lg-6 col-xxl-4 px-4 d-flex justify-content-center'>
 								<VillaSavoyeAnimation width={550} height={250} className='img-fluid' />
 							</div>
 						</div>

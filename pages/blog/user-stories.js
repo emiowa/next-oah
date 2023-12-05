@@ -1,5 +1,5 @@
 import Layout from "../../components/Layout";
-import PortaFiraAnimation from "../../components/PortaFiraAnimation";
+import NakaginCapsuleAnimation from "../../components/NakaginCapsuleAnimation";
 
 export default function UserStories(){
 	return (<div>
@@ -16,7 +16,7 @@ export default function UserStories(){
 							</div>
 						</div>
 						<div className='styleBackgroundBlogAnimation'>
-							<PortaFiraAnimation className='img-fluid portaFiraAnimationStyle'/>
+							<NakaginCapsuleAnimation className='img-fluid nakaginCapsuleAnimationStyle'/>
 						</div>
 					</div>
 				</div>

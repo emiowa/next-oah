@@ -3,13 +3,19 @@
     position: absolute;
 }
 .portaFiraAnimationStyle{
-    width: 92vw;
-    right: -25vw;
+    width: 100vw;
+    right: -23vw;
+    top: 2vw;
     position: relative;
 }
 .plazaLibertadAnimationStyle{
     width: 100vw;
     right: -25vw;
+    position: relative;
+}
+.nakaginCapsuleAnimationStyle{
+    width: 100vw;
+    right: 15vw;
     position: relative;
 }
 
@@ -48,12 +54,30 @@
     background-color: transparent;
     border: solid 0.1vw #c19950;
 }
+.goToButtonLTAA{
+    width: fit-content;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f8f9fa;
+    background-color: #bc9e91;
+    padding: 0.6vw 3vw;
+    border: solid 0.1vw #bc9e91;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.goToButtonLTAA:hover{
+    color: #bc9e91;
+    background-color: transparent;
+    border: solid 0.1vw #bc9e91;
+}
 
 /* FOR BIG SCREENS */
 @media (min-width: 1400px){
     .portaFiraAnimationStyle{
         width: 90vw;
         right: -25vw;
+        top: 0;
     }
     .textStyleResponsive{
         padding-left: 150px !important;
@@ -67,6 +91,9 @@
     .plazaLibertadAnimationStyle{
         width: 85vw;
         right: -30vw;
+    }
+    .nakaginCapsuleAnimationStyle{
+        width: 95vw;
     }
 }
 
@@ -101,5 +128,20 @@
         color: #c19950;
         background-color: transparent;
         border: solid 0.1vw #c19950;
+    }
+    .nakaginCapsuleAnimationStyle{
+        display: none;
+    }
+    .goToButtonLTAA{
+        font-size: 20px;
+        color: #f8f9fa;
+        background-color: #bc9e91;
+        padding: 6px 40px;
+        border: solid 0.1vw #bc9e91;
+    }
+    .goToButtonLTAA:hover{
+        color: #bc9e91;
+        background-color: transparent;
+        border: solid 0.1vw #bc9e91;
     }
 }

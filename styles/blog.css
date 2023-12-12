@@ -18,6 +18,9 @@
     right: 15vw;
     position: relative;
 }
+.comingSoonAnimationStyle{
+    width: 43vw;
+}
 
 /* GO TO BUTTON */
 .goToButtonUS{
@@ -99,6 +102,10 @@
 
 /* FOR MOBILE */
 @media (max-width: 991px){
+    #subtitleMobile{
+        font-size: 1.1rem !important;
+        padding: 0 10px;
+    }
     .portaFiraAnimationStyle{
         display: none;
     }
@@ -116,6 +123,9 @@
     }
     .plazaLibertadAnimationStyle{
         display: none;
+    }
+    .comingSoonAnimationStyle{
+        width: 90vw;
     }
     .goToButtonLIA{
         font-size: 20px;

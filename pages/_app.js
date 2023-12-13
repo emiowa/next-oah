@@ -5,6 +5,7 @@ import '../styles/header.css';
 import '../styles/footer.css';
 import '../styles/about.css';
 import '../styles/blog.css';
+import '../styles/contact-form.css';
 import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {

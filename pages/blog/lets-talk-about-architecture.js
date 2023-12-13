@@ -14,7 +14,7 @@ export default function LetsTalkAboutArch(){
 								Our goal as architects should be to achieve a balance between aesthetics and functionality. However, we have often erred by sacrificing one for the other, sometimes innocently and without being fully aware of the repercussions these decisions can have on the people who will inhabit these spaces.<br /><br />
 								Welcome to LET’S TALK ABOUT ARCHITECTURE!</p>
 								<div className="mt-5 text-center">
-									<button className="goToButtonUS" onClick={ComingSoonLink}>
+									<button className="goToButton" onClick={ComingSoonLink}>
 										<Link href="/coming-soon" className="linkStyle">Let's Go!</Link>
 									</button>
 								</div>

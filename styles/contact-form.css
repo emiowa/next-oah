@@ -1,0 +1,55 @@
+.formAnimationStyle{
+    width: 43vw;
+}
+.heightBigScreen{
+    height: 100vh;
+}
+/* SEND MESSAGE BUTTON */
+.sendMessageButton{
+    margin: 2rem 5rem 0 5rem;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f8f9fa;
+    background-color: #919e72;
+    padding: 0.6vw 3vw;
+    border: solid 0.1vw #919e72;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.sendMessageButton:hover{
+    color: #919e72;
+    background-color: transparent;
+    border: solid 0.1vw #919e72;
+}
+
+/* INPUT */
+.inputStyle{
+    margin: 0.5rem 1.5rem;
+}
+
+/* FOR BIG SCREENS */
+@media (min-width: 1400px){
+    .inputStyle{
+        margin: 0.5rem 7rem;
+    }
+    .sendMessageButton{
+        margin: 2rem 12rem 0 12rem;
+    }
+}
+
+/* FOR MOBILE */
+@media (max-width: 991px){
+    .inputStyle{
+        margin: 0.2rem 0.5rem;
+    }
+    .formAnimationStyle{
+        width: 80vw;
+    }
+    .sendMessageButton{
+        margin: 1rem 2rem 3rem 2rem;
+    }
+    .heightBigScreen{
+        height: auto;
+    }
+}

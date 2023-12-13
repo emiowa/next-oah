@@ -23,7 +23,7 @@
 }
 
 /* GO TO BUTTON */
-.goToButtonUS{
+.goToButton{
     width: fit-content;
     font-weight: bold;
     font-size: 20px;
@@ -35,45 +35,12 @@
     cursor: pointer;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
-.goToButtonUS:hover{
+.goToButton:hover{
     color: #919e72;
     background-color: transparent;
     border: solid 0.1vw #919e72;
 }
-.goToButtonLIA{
-    width: fit-content;
-    font-weight: bold;
-    font-size: 20px;
-    color: #f8f9fa;
-    background-color: #919e72;
-    padding: 0.6vw 3vw;
-    border: solid 0.1vw #919e72;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-}
-.goToButtonLIA:hover{
-    color: #919e72;
-    background-color: transparent;
-    border: solid 0.1vw #919e72;
-}
-.goToButtonLTAA{
-    width: fit-content;
-    font-weight: bold;
-    font-size: 20px;
-    color: #f8f9fa;
-    background-color: #919e72;
-    padding: 0.6vw 3vw;
-    border: solid 0.1vw #919e72;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-}
-.goToButtonLTAA:hover{
-    color: #919e72;
-    background-color: transparent;
-    border: solid 0.1vw #919e72;
-}
+
 
 /* FOR BIG SCREENS */
 @media (min-width: 1400px){
@@ -109,17 +76,17 @@
     .portaFiraAnimationStyle{
         display: none;
     }
-    .goToButtonUS{
+    .goToButton{
         font-size: 20px;
         color: #f8f9fa;
-        background-color: #a46951;
+        background-color: #919e72;
         padding: 6px 40px;
-        border: solid 0.1vw #a46951;
+        border: solid 0.1vw #919e72;
     }
-    .goToButtonUS:hover{
-        color: #a46951;
+    .goToButton:hover{
+        color: #919e72;
         background-color: transparent;
-        border: solid 0.1vw #a46951;
+        border: solid 0.1vw #919e72;
     }
     .plazaLibertadAnimationStyle{
         display: none;
@@ -127,31 +94,7 @@
     .comingSoonAnimationStyle{
         width: 90vw;
     }
-    .goToButtonLIA{
-        font-size: 20px;
-        color: #f8f9fa;
-        background-color: #c19950;
-        padding: 6px 40px;
-        border: solid 0.1vw #c19950;
-    }
-    .goToButtonLIA:hover{
-        color: #c19950;
-        background-color: transparent;
-        border: solid 0.1vw #c19950;
-    }
     .nakaginCapsuleAnimationStyle{
         display: none;
-    }
-    .goToButtonLTAA{
-        font-size: 20px;
-        color: #f8f9fa;
-        background-color: #bc9e91;
-        padding: 6px 40px;
-        border: solid 0.1vw #bc9e91;
-    }
-    .goToButtonLTAA:hover{
-        color: #bc9e91;
-        background-color: transparent;
-        border: solid 0.1vw #bc9e91;
     }
 }

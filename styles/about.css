@@ -6,6 +6,14 @@
     text-align: justify;
 }
 
+/* FOR BIG SCREENS */
+@media (min-width: 1400px){
+    .marginDiv{
+        padding-left: 23%;
+        padding-right: 23%;
+    }
+}
+
 /* FOR MOBILE */
 @media (max-width: 991px){
     .marginDiv{

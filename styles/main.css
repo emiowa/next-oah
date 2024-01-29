@@ -1,7 +1,10 @@
-*{font-family: 'Lato', sans-serif;}
+*{
+    font-family: 'Lato', sans-serif;
+}
 body{
-    height: 100%;
+    width: 100vw;
     overflow-x: hidden;
+    margin: 0;
 }
 .styleNavbar{
     z-index: 1000;
@@ -40,3 +43,4 @@ body{
     background-color: #f8f9fa;
     border: solid 0.1vw #212529;
 }
+

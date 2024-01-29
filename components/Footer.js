@@ -6,9 +6,8 @@ import VillaSavoyeAnimation from './VillaSavoyeAnimation';
 export default function Footer(){
 	return (
 			<div>
-				<div classNameName="container">
-					<div className="py-5 bg-dark">
-						<div className="row">
+				<div classNameName="container-fluid">
+					<div className="row py-5 bg-dark">
 							<div className="col-12 col-sm-12 col-lg-6 text-light px-5 paddingFooter">
 								<h5>OAH<br />Architecture</h5>
 								<p>Design is more important and necessary than we thought, good design can affect people's lives, habits, routines and feelings in a positive way.</p>
@@ -29,7 +28,6 @@ export default function Footer(){
 							<div className='col-12 col-sm-12 col-lg-6 col-xxl-4 px-4 d-flex justify-content-center'>
 								<VillaSavoyeAnimation width={550} height={250} className='img-fluid' />
 							</div>
-						</div>
 
 						<div className="text-center pt-2 my-1 text-light">
 							<small>&copy; OAH Architecture. All rights reserved.</small>

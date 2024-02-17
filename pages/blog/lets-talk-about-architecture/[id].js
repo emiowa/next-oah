@@ -19,9 +19,12 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
-// mt-5 pt-4 mx-0 px-lg-5 marginDivPosts summaryMarginPosts
+
 export default function Post({ postData }) {
-    function LetsTalkAboutArchitectureLink(){}
+  function goBack(){
+    sessionStorage.setItem('scrollPos', window.scrollY.toString());
+    window.history.back();
+  }
     return (
       <Layout>
         <div className='container-fluid'>
@@ -48,9 +51,7 @@ export default function Post({ postData }) {
               </div>
               <p className='fs-6 text-center mt-5'>LET'S TALK ABOUT ARCHITECTURE!</p>
               <div className="mb-5 pb-5 text-center">
-									<button className="goToButton" onClick={LetsTalkAboutArchitectureLink}>
-										<Link href="/blog/lets-talk-about-architecture" className="linkStyle">Go Back!</Link>
-									</button>
+									<button className="goToButton linkStyle" onClick={goBack}>Go Back!</button>
 							</div>
             </div>
           </div>
@@ -58,4 +59,3 @@ export default function Post({ postData }) {
       </Layout>
     );
   }
-

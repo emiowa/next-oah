@@ -30,6 +30,22 @@
 .marginDivPosts{
     padding: 0 3vw;
 }
+.cardImage{
+    transition: all 0.5s;
+}
+.cardHover{
+    text-decoration: none;
+}
+.cardHover:hover{
+    cursor: pointer;
+}
+.cardHover:hover .cardImage{
+    scale: 1.1;
+}
+.marginPostsHomePage{
+    margin-right: 0;
+    margin-left: 0;
+}
 
 
 /* GO TO BUTTON */
@@ -46,9 +62,32 @@
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 .goToButton:hover{
-    color: #919e72;
     background-color: transparent;
     border: solid 0.1vw #919e72;
+}
+.goToButton:hover .linkStyle{
+    color: #919e72;
+}
+
+/* READ MORE LTAA BUTTON */
+.readMoreLTAAButton{
+    width: fit-content;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f8f9fa;
+    background-color: #bc9e91;
+    padding: 0.6vw 3vw;
+    border: solid 0.1vw #bc9e91;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.readMoreLTAAButton:hover{
+    background-color: transparent;
+    border: solid 0.1vw #bc9e91;
+}
+.readMoreLTAAButton:hover .linkStyle{
+    color: #bc9e91;
 }
 
 
@@ -78,6 +117,9 @@
     .marginDivPosts{
         padding: 0 10vw;
     }
+    .marginPostsHomePage{
+        padding: 0 15vw;
+    }
 }
 
 /* FOR MOBILE */
@@ -90,16 +132,7 @@
         display: none;
     }
     .goToButton{
-        font-size: 20px;
-        color: #f8f9fa;
-        background-color: #919e72;
         padding: 6px 40px;
-        border: solid 0.1vw #919e72;
-    }
-    .goToButton:hover{
-        color: #919e72;
-        background-color: transparent;
-        border: solid 0.1vw #919e72;
     }
     .plazaLibertadAnimationStyle{
         display: none;
@@ -118,5 +151,8 @@
     }
     .marginDivPosts{
         padding: 0;
+    }
+    .readMoreLTAAButton{
+        padding: 6px 40px;
     }
 }

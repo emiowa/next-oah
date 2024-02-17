@@ -3,7 +3,7 @@ import Link from 'next/link';
 import PortaFiraAnimation from "../../components/PortaFiraAnimation";
 
 export default function LetsTalkAboutArch(){
-	function ComingSoonLink(){}
+	function LetsTalkAboutArchitectureHomeLink(){}
 	return (<div>
 				<Layout>
 					<div className='container-fluid mt-5 pt-4 mx-0 px-lg-5 vh-lg-100 mb-5'>
@@ -14,8 +14,8 @@ export default function LetsTalkAboutArch(){
 								Our goal as architects should be to achieve a balance between aesthetics and functionality. However, we have often erred by sacrificing one for the other, sometimes innocently and without being fully aware of the repercussions these decisions can have on the people who will inhabit these spaces.<br /><br />
 								Welcome to LET’S TALK ABOUT ARCHITECTURE!</p>
 								<div className="mt-5 text-center">
-									<button className="goToButton" onClick={ComingSoonLink}>
-										<Link href="/coming-soon" className="linkStyle">Let's Go!</Link>
+									<button className="goToButton" onClick={LetsTalkAboutArchitectureHomeLink}>
+										<Link href="/blog/lets-talk-about-architecture-home" className="linkStyle">Let's Go!</Link>
 									</button>
 								</div>
 							</div>

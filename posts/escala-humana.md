@@ -1,0 +1,8 @@
+---
+number: '17'
+title: 'Escala humana'
+summary: 'Las ciudades se encuentran en un crecimiento constante, aparecen en el panorama edificaciones que superan alturas jamás imaginadas.'
+text: 'Con el crecimiento poblacional en el mundo, las ciudades se han visto enfrentadas a un crecimiento tanto horizontal como vertical con el fin de responder a las necesidades y requerimientos en cuanto a vivienda y servicios que la comunidad exige. Sin embargo, en ciudades donde la expansión en el territorio ya no es una opción viable, han encontrado grandes ventajas en el diseño y construcción de edificaciones de gran altura puesto que se puede dar ese crecimiento que se necesita pero en un área de terreno establecido y delimitado. Es un escenario que podríamos calificar de acertado y exitoso si lo miramos como individuo, pero la ciudad es mucho más que eso. Si empezaran a aparecer en el panorama diversas edificaciones de esta magnitud podría reducir la calidad de vida de sus habitantes al convertirse en una ciudad agresiva con la escala humana. La planeación urbana debe ser de vital importancia. Aquel espacio horizontal que se ganó al crecer la edificación de forma vertical debería ser aprovechado para el diseño de espacios públicos de calidad para la comunidad.'
+question: '¿Consideras que tu ciudad está siendo diseñada de forma que le brinda espacios de calidad a la comunidad teniendo en cuenta la escala humana?'
+image: '/human-scale.png'
+---

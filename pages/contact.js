@@ -12,7 +12,7 @@ export default function Contact(){
 									<ComingSoonAnimation className='img-fluid mt-5 mt-lg-4 mb-lg-0 mb-3 formAnimationStyle'/>
 								</div>
 								<div className="col-sm-12 col-lg-6">
-									<h1 className="display-lg-2 display-1 text-center mt-3 mb-3">Contact me</h1>
+									<h1 className="display-lg-2 display-1 text-center mt-3 mb-3">Contáctame</h1>
 									<ContactForm />
 								</div>
 							</div>

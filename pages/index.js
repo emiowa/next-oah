@@ -7,9 +7,6 @@ import WaterfallHouseAnimation from '../components/WaterfallHouseAnimation';
 
 export default function Home(){
 	const router = useRouter();
-	function UserStoriesLink(){}
-	function LIALink(){}
-	function LTAALink(){}
 	return (
 		<div>
 				<Layout>
@@ -22,34 +19,28 @@ export default function Home(){
 							<div className='col text-white me-5 pe-5 ms-5' id='containerMobile'>
 								<div className='vh-100 vw-auto d-flex flex-column justify-content-lg-center justify-content-start align-items-lg-start align-items-end initialTextMobile'>
 									<h1 className='display-1' id='titleHomeMobile'>OAH<br />Architecture</h1>
-									<p className='fst-italic textConcept'>Let's build together friendlier and consciously designed spaces</p>
-									<p className='textCreatedBy'>created by Emi Owashi</p>
+									<p className='fst-italic textConcept'>Construyamos juntos espacios más amigables y conscientemente diseñados.</p>
+									<p className='textCreatedBy'>creado por Emi Owashi</p>
 								</div>
 								<div className='vh-100 vw-auto d-flex flex-column justify-content-center'>
-									<h2 className='fw-light display-3' id='titleH2Mobile'>User stories</h2>
-									<p id='paragraphMobile'>When inhabiting a space becomes part of your daily routine, you begin to identify its virtues and defects, you begin to acquire a taste for spending more time in some areas than in others.</p>
+									<h2 className='fw-light display-3' id='titleH2Mobile'>Historias de usuarios</h2>
+									<p id='paragraphMobile'>Cuando el habitar un espacio se convierte en parte de tu rutina diaria, empiezas a identificar sus virtudes y defectos, empiezas a adquirir un gusto por pasar más tiempo en un área que en otra.</p>
 									<div className='buttonMobile'>
-										<button className="readMoreButton" onClick={UserStoriesLink}>
-											<Link href="/blog/user-stories" className="readMoreLinkStyle">Read more</Link>
-										</button>
+										<Link href="/blog/historias-de-usuarios" className="readMoreButton readMoreLinkStyle">Cuéntame más!</Link>
 									</div>
 								</div>
 								<div className='vh-100 vw-auto d-flex flex-column justify-content-center'>
-									<h2 className='fw-light display-3' id='titleH2Mobile'>Let's inhabit<br /> Architecture</h2>
-									<p id='paragraphMobile'>Architecture is much more than a building to be admired, Architecture is created to be inhabited.</p>
+									<h2 className='fw-light display-3' id='titleH2Mobile'>Habitemos la<br /> Arquitectura</h2>
+									<p id='paragraphMobile'>La Arquitectura es mucho más que un edificio para ser admirado, la arquitectura es creada para ser habitada.</p>
 									<div className='buttonMobile'>
-										<button className="readMoreButton" onClick={LIALink}>
-											<Link href="/blog/lets-inhabit-architecture" className="readMoreLinkStyle">Read more</Link>
-										</button>
+										<Link href="/blog/habitemos-la-arquitectura" className="readMoreButton readMoreLinkStyle">Cuéntame más!</Link>
 									</div>
 								</div>
 								<div className='vh-100 vw-auto d-flex flex-column justify-content-center'>
-									<h2 className='fw-light display-3' id='titleH2Mobile'>Let's talk about<br /> Architecture</h2>
-									<p id='paragraphMobile'>How are we designing our cities? Are we committed to improving or are we still making the same mistakes of the past?</p>
+									<h2 className='fw-light display-3' id='titleH2Mobile'>Hablemos de<br /> Arquitectura</h2>
+									<p id='paragraphMobile'>¿Cómo estamos diseñando nuestras ciudades? ¿Estamos comprometidos con mejorar o seguimos cometiendo los mismos errores del pasado?</p>
 									<div className='buttonMobile'>
-										<button className="readMoreButton" onClick={LTAALink}>
-											<Link href="/blog/lets-talk-about-architecture" className="readMoreLinkStyle">Read more</Link>
-										</button>
+										<Link href="/blog/hablemos-de-arquitectura" className="readMoreButton readMoreLinkStyle">Cuéntame más!</Link>
 									</div>
 								</div>
 								

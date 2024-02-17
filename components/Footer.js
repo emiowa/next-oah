@@ -10,9 +10,9 @@ export default function Footer(){
 					<div className="row py-5 bg-dark">
 							<div className="col-12 col-sm-12 col-lg-6 text-light px-5 paddingFooter">
 								<h5>OAH<br />Architecture</h5>
-								<p>Design is more important and necessary than we thought, good design can affect people's lives, habits, routines and feelings in a positive way.</p>
+								<p>El diseño es más importante y necesario de lo que creemos, un buen diseño puede afectar la vida, los hábitos, rutinas y emociones de las personas de una forma positiva.</p>
 								<div className="d-flex flex-column">
-									<p className='text-center'>Let's enjoy Architecture! Follow me!</p>
+									<p className='text-center'>Disfrutemos de la Arquitectura! Sígueme!</p>
 									<div className='d-flex justify-content-center'>
 										<Link href='https://www.tiktok.com/@oaharchitecture' target='_blank' className='px-2'><box-icon type='logo' name='tiktok' color='rgba(248,249,250,1)'></box-icon></Link>
 										<Link href='https://www.instagram.com/oaharchitecture/' target='_blank' className='px-2'><box-icon type='logo' name='instagram-alt' color='rgba(248,249,250,1)'></box-icon></Link>
@@ -21,7 +21,9 @@ export default function Footer(){
 									</div>
 									<br />
 									<div className='contactUsButtonMobile'>
-										<button className='contactUsButton'>Contact me</button>
+										<button className='contactUsButton'>
+											<Link href="/contact" className='text-decoration-none contactUsButtonStyle'>Hablemos un rato!</Link>
+										</button>
 									</div>
 								</div>
 							</div>

@@ -9,19 +9,9 @@ body{
 .styleNavbar{
     z-index: 1000;
 }
-.linkStyle{
-    text-decoration: none;
-    color: #f8f9fa;
-}
 .readMoreLinkStyle{
     text-decoration: none;
     color: #f8f9fa;
-}
-.goToButtonUS:hover .linkStyle{
-    color: #919e72;
-}
-.readMoreButton:hover .readMoreLinkStyle{
-    color: #212529;
 }
 
 /* READ MORE BUTTON */

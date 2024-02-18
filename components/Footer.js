@@ -21,9 +21,7 @@ export default function Footer(){
 									</div>
 									<br />
 									<div className='contactUsButtonMobile'>
-										<button className='contactUsButton'>
-											<Link href="/contact" className='text-decoration-none contactUsButtonStyle'>Hablemos un rato!</Link>
-										</button>
+										<Link href="/contact" className='text-decoration-none contactUsButton'>Hablemos un rato!</Link>
 									</div>
 								</div>
 							</div>

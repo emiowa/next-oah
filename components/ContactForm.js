@@ -11,7 +11,6 @@ export default function ContactForm(){
 			<textarea className='inputStyle' id="message" cols="50" rows="5" name="message" placeholder="Ahora sí, cuéntamelo todo, ¿en qué te puedo ayudar?" required></textarea>
 			<button className='sendMessageButton' type="submit">Enviar!</button>
 			<input type="hidden" name="redirect" value="https://oaharchitecture.com"></input>
-	
 			<script src="https://web3forms.com/client/script.js" async defer></script>
 	  	</form>
 	)

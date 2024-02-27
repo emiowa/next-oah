@@ -19,7 +19,7 @@ export default function Post({ allPostsData }) {
 			<div className='row mt-5 pt-4 mx-xs-0 mx-lg-5 mb-5 marginPostsHomePage'>
                 <div className='d-flex flex-column justify-content-center align-items-center px-xs-0 px-lg-5'>
                     <h1 className="display-5 text-center mt-5 mb-3">Hablemos de Arquitectura</h1>
-                    <p className='text-center mx-xs-0 mx-lg-5 px-xs-0 px-lg-5 mb-5'>En mi diario vivir he encontrado situaciones que me han hecho preguntar y reflexionar sobre la forma en la que estamos diseñando nuestras ciudades. ¿Estamos comprometidos con mejorar o seguimos cometiendo los mismos errores del pasado?</p>
+                    <p className='text-center mx-xs-0 mx-lg-5 px-xs-0 px-lg-5 mb-5 fw-light'>En mi diario vivir he encontrado situaciones que me han hecho preguntar y reflexionar sobre la forma en la que estamos diseñando nuestras ciudades. ¿Estamos comprometidos con mejorar o seguimos cometiendo los mismos errores del pasado?</p>
                     <div className="mb-5 pb-5 text-center">
                       <Link href="/blog/hablemos-de-arquitectura" className="text-decoration-none readMoreLTAAButton">Cuéntame más!</Link>
                     </div>

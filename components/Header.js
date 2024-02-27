@@ -16,25 +16,25 @@ export default function Header(){
 					<div className='collapse navbar-collapse navbarAlignLeft centerTextMenuMobile' id='navbarSupportedContent'>
 						<ul className='navbar-nav mb-2 mb-lg-0 centerTextDropdownMobile'>
 							<li className='nav-item ps-lg-4'>
-								<a className={router.pathname === '/' ? 'nav-link text-body fw-bold active' : 'nav-link text-body'} aria-current='page' href='/'>HOME</a>
+								<Link className={router.pathname === '/' ? 'nav-link text-body fw-bold active' : 'nav-link text-body'} aria-current='page' href='/'>HOME</Link>
 							</li>
 							<li className='nav-item dropdown ps-lg-4'>
-								<a className= {(router.pathname === '/about/sobre-mi' || router.pathname === '/about/sobre-oah-architecture') ? 'dropdown-toggle nav-link text-body fw-bold active' : 'dropdown-toggle nav-link text-body'} href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>ABOUT</a>
+								<Link className= {(router.pathname === '/about/sobre-mi' || router.pathname === '/about/sobre-oah-architecture') ? 'dropdown-toggle nav-link text-body fw-bold active' : 'dropdown-toggle nav-link text-body'} href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>ABOUT</Link>
 								<ul className='dropdown-menu centerTextDropdownMobile' aria-labelledby='navbarDropdown'>
-									<li><a className= {router.pathname === '/about/sobre-mi' ? 'dropdown-item bg-light fw-bold text-body active' : 'dropdown-item'} href='/about/sobre-mi'>Sobre mí</a></li>
-									<li><a className={router.pathname === '/about/sobre-oah-architecture' ? 'dropdown-item bg-light fw-bold text-body active' : 'dropdown-item'} href='/about/sobre-oah-architecture'>Sobre OAH Architecture</a></li>
+									<li><Link className= {router.pathname === '/about/sobre-mi' ? 'dropdown-item bg-light fw-bold text-body active' : 'dropdown-item'} href='/about/sobre-mi'>Sobre mí</Link></li>
+									<li><Link className={router.pathname === '/about/sobre-oah-architecture' ? 'dropdown-item bg-light fw-bold text-body active' : 'dropdown-item'} href='/about/sobre-oah-architecture'>Sobre OAH Architecture</Link></li>
 								</ul>
 							</li>
 							<li className='nav-item dropdown ps-lg-4'>
-								<a className={(router.pathname === '/blog/historias-de-usuarios' || router.pathname === '/blog/habitemos-la-arquitectura' || router.pathname === '/blog/hablemos-de-arquitectura') ? 'dropdown-toggle nav-link text-body fw-bold active' : 'dropdown-toggle nav-link text-body'} href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>BLOG</a>
+								<Link className={(router.pathname === '/blog/historias-de-usuarios' || router.pathname === '/blog/habitemos-la-arquitectura' || router.pathname === '/blog/hablemos-de-arquitectura' || router.pathname === '/blog/hablemos-de-arquitectura-home' || router.pathname === '/blog/hablemos-de-arquitectura/[id]') ? 'dropdown-toggle nav-link text-body fw-bold active' : 'dropdown-toggle nav-link text-body'} href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>BLOG</Link>
 								<ul className='dropdown-menu centerTextDropdownMobile' aria-labelledby='navbarDropdown'>
-									<li><a className={router.pathname === '/blog/historias-de-usuarios' ? 'dropdown-item bg-light fw-bold text-body active' : 'dropdown-item'} href='/blog/historias-de-usuarios'>Historias de usuarios</a></li>
-									<li><a className={router.pathname === '/blog/habitemos-la-arquitectura' ? 'dropdown-item bg-light fw-bold text-body active' : 'dropdown-item'} href='/blog/habitemos-la-arquitectura'>Habitemos la Arquitectura</a></li>
-									<li><a className={router.pathname === '/blog/hablemos-de-arquitectura' ? 'dropdown-item bg-light fw-bold text-body active' : 'dropdown-item'} href='/blog/hablemos-de-arquitectura'>Hablemos de Arquitectura</a></li>
+									<li><Link className={router.pathname === '/blog/historias-de-usuarios' ? 'dropdown-item bg-light fw-bold text-body active' : 'dropdown-item'} href='/blog/historias-de-usuarios'>Historias de usuarios</Link></li>
+									<li><Link className={router.pathname === '/blog/habitemos-la-arquitectura' ? 'dropdown-item bg-light fw-bold text-body active' : 'dropdown-item'} href='/blog/habitemos-la-arquitectura'>Habitemos la Arquitectura</Link></li>
+									<li><Link className={(router.pathname === '/blog/hablemos-de-arquitectura' || router.pathname === '/blog/hablemos-de-arquitectura-home' || router.pathname === '/blog/hablemos-de-arquitectura/[id]') ? 'dropdown-item bg-light fw-bold text-body active' : 'dropdown-item'} href='/blog/hablemos-de-arquitectura'>Hablemos de Arquitectura</Link></li>
 								</ul>
 							</li>
 							<li className='nav-item ps-lg-4'>
-								<a className= {router.pathname === '/contact' ? 'nav-link text-body fw-bold active' : 'nav-link text-body'} aria-current='page' href='/contact'>CONTACT</a>
+								<Link className= {router.pathname === '/contact' ? 'nav-link text-body fw-bold active' : 'nav-link text-body'} aria-current='page' href='/contact'>CONTACT</Link>
 							</li>
 							{/* <li className='nav-item dropdown ps-lg-4'>
 								<a className='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>

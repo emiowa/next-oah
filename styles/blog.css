@@ -128,7 +128,7 @@
         display: none;
     }
     .goToButton{
-        padding: 6px 40px;
+        padding: 10px 40px;
     }
     .plazaLibertadAnimationStyle{
         display: none;
@@ -149,6 +149,6 @@
         padding: 0;
     }
     .readMoreLTAAButton{
-        padding: 6px 40px;
+        padding: 10px 40px;
     }
 }

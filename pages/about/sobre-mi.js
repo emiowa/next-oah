@@ -6,7 +6,7 @@ export default function AboutMe(){
 					<div className='container-fluid mt-5 pt-4 mx-0 px-lg-5'>
 						<div className='row mb-5 marginDiv'>
 							<h1 className="display-lg-2 display-1 text-center mt-5 mb-5">Sobre mí</h1>
-							<p className="paragraphStyle">Estaba en el último año del colegio antes de entrar a la universidad, decidida pero no convencida en estudiar Arquitectura. Era otro día más de orientación profesional, ya saben, cuando van profesionales a contarnos cómo fueron sus experiencias académicas y laborales para darte una idea de cuál podría ser tu futuro si eliges estudiar esa carrera.<br /><br />
+							<p className="paragraphStyle fw-light">Estaba en el último año del colegio antes de entrar a la universidad, decidida pero no convencida en estudiar Arquitectura. Era otro día más de orientación profesional, ya saben, cuando van profesionales a contarnos cómo fueron sus experiencias académicas y laborales para darte una idea de cuál podría ser tu futuro si eliges estudiar esa carrera.<br /><br />
 							Nos dividieron en grupos. Yo pertenecía al grupo de los amantes al diseño. Debo admitir que me sentía muy fuera de lugar. Todos los que estaban allí claramente eran reconocidos por sus talentos artísticos. Yo era reconocida por ser más racional y cuadriculada, la organizada y sistemática, mis apuntes a mano parecían hechos a computador, siempre títulos en rojo y letra en un perfecto Arial 12.<br /><br />
 							Empezó la orientación y los conferencistas hicieron una pregunta:<br />
 							¿Quiénes de ustedes se consideran creativos? Levanten la mano.<br />

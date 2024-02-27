@@ -6,7 +6,9 @@ import '../styles/footer.css';
 import '../styles/about.css';
 import '../styles/blog.css';
 import '../styles/contact-form.css';
+import Head from 'next/head';
 import { useEffect } from 'react';
+import Link from 'next/link';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -14,7 +16,13 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return(
+    <>
+      <Head>
+        <Link rel='logo' href='/favicon.ico'/>
+        <title>OAH Architecture</title>
+      </Head>
       <Component {...pageProps} />
+    </>
   )
 }
 

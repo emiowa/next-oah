@@ -9,6 +9,7 @@ import '../styles/contact-form.css';
 import Head from 'next/head';
 import { useEffect } from 'react';
 import Link from 'next/link';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -17,11 +18,13 @@ function MyApp({ Component, pageProps }) {
 
   return(
     <>
-      <Head>
-        <Link rel='logo' href='/favicon.ico'/>
-        <title>OAH Architecture</title>
-      </Head>
-      <Component {...pageProps} />
+      <ErrorBoundary fallback={<div>Something went wrong...</div>}>
+        <Head>
+          <Link rel='logo' href='/favicon.ico'/>
+          <title>OAH Architecture</title>
+        </Head>
+        <Component {...pageProps} />
+      </ErrorBoundary>
     </>
   )
 }

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "staert": "next start"
+    "start": "next start"
   },
   "keywords": [],
   "author": "",

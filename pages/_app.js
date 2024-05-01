@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         <Link rel='logo' href='/favicon.ico'/>
         <title>OAH Architecture</title>
       </Head>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </>
   )
 }

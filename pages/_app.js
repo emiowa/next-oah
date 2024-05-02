@@ -18,7 +18,6 @@ function MyApp({ Component, pageProps }) {
   return(
     <>
       <Head>
-        <Link rel='logo' href='/favicon.ico'/>
         <title>OAH Architecture</title>
       </Head>
         <Component {...pageProps} />

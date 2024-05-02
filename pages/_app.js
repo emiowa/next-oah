@@ -7,7 +7,7 @@ import '../styles/about.css';
 import '../styles/blog.css';
 import '../styles/contact-form.css';
 import Head from 'next/head';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import Link from 'next/link';
 
 function MyApp({ Component, pageProps }) {

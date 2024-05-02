@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/main.css';
 import '../styles/home.css';
 import '../styles/header.css';
@@ -11,9 +11,9 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    import('bootstrap/dist/js/bootstrap');
-  }, []);
+  // useEffect(() => {
+  //   import('bootstrap/dist/js/bootstrap');
+  // }, []);
 
   return(
     <>

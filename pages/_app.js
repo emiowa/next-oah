@@ -8,17 +8,16 @@ import '../styles/contact-form.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import { useEffect } from 'react';
-import Link from 'next/link';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    require('bootstrap/dist/js/bootstrap.bundle.min.js');
+    import('bootstrap/dist/js/bootstrap.bundle.min.js');
   }, []);
 
   return(
     <>
       <Head>
-        <Link rel='logo' href='/favicon.ico'/>
+        <link rel='logo' href='/favicon.ico'/>
         <title>OAH Architecture</title>
       </Head>
         <Component {...pageProps} />

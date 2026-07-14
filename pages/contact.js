@@ -1,7 +1,12 @@
 import Layout from "../components/Layout";
 import Link from 'next/link';
 import ContactForm from "../components/ContactForm"
-import ComingSoonAnimation from "../components/ComingSoon";
+import dynamic from 'next/dynamic';
+
+const ComingSoonAnimation = dynamic(
+	() => import("../components/ComingSoon"),
+	{ ssr: false }
+);
 
 export default function Contact(){
 	return (<div>

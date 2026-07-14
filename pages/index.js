@@ -1,9 +1,13 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from "../components/Layout"
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import WaterfallHouseAnimation from '../components/WaterfallHouseAnimation';
+import dynamic from 'next/dynamic';
+
+const WaterfallHouseAnimation = dynamic(
+	() => import('../components/WaterfallHouseAnimation'),
+	{ ssr: false }
+);
 
 export default function Home(){
 	const router = useRouter();

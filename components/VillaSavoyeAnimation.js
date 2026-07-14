@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-web';
-import animationData from './src/animations/villa-savoya-animation.json';
+import animationData from '../public/animations/villa-savoya-animation.json';
 
 const VillaSavoyeAnimation = ({width, height, className}) => {
     const containerRef = React.useRef(null);

@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-web';
-import animationData from './src/animations/waterfall-house-animation.json';
+import animationData from '../public/animations/waterfall-house-animation.json';
 
 const WaterfallHouseAnimation = ({className}) => {
     const containerRef = React.useRef(null);

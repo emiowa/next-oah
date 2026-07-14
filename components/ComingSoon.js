@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-web';
-import animationData from './src/animations/coming-soon-page-animation.json';
+import animationData from '../public/animations/coming-soon-page-animation.json';
 
 const ComingSoonAnimation = ({className}) => {
     const containerRef = React.useRef(null);

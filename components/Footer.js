@@ -1,12 +1,16 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
-import VillaSavoyeAnimation from './VillaSavoyeAnimation';
+import dynamic from 'next/dynamic';
+
+const VillaSavoyeAnimation = dynamic(
+	() => import('./VillaSavoyeAnimation'),
+	{ ssr: false }
+);
 
 export default function Footer(){
 	return (
 			<div>
-				<div classNameName="container-fluid">
+				<div className="container-fluid">
 					<div className="row py-5 bg-dark">
 							<div className="col-12 col-sm-12 col-lg-6 text-light px-5 paddingFooter">
 								<h5>OAH<br />Architecture</h5>

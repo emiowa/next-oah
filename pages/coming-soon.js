@@ -1,10 +1,15 @@
 import Layout from "../components/Layout";
-import ComingSoonAnimation from "../components/ComingSoon";
+import dynamic from 'next/dynamic';
+
+const ComingSoonAnimation = dynamic(
+	() => import("../components/ComingSoon"),
+	{ ssr: false }
+);
 
 export default function ComingSoon(){
 	return (<div>
 				<Layout>
-				<div className='container-fluid mt-5 mx-0 px-lg-5 px-0 vh-100'>
+				<div className='container-fluid my-5 mx-0 px-lg-5 px-0 vh-100'>
 					<div className='row'>
 						<div>
 							<h1 className="display-4 text-center mt-5">¡Muy pronto!</h1>
